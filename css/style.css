@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7f9;  /* Light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+#loginSection {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;  /* White background */
+  border: 1px solid #dcdcdc;  /* Light gray border */
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+input[type="email"], input[type="password"], textarea, input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dcdcdc;  /* Light gray border */
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #0051a1;  /* Raiffeisenbank blue */
+  color: #ffffff;  /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003875;  /* Darker blue for hover effect */
+}
+
+#talksSection {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+#newTalkForm, #discussionSection {
+  background-color: #ffffff;  /* White background */
+  border: 1px solid #dcdcdc;  /* Light gray border */
+  border-radius: 5px; 
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#loginError {
+  margin: 0;
+}

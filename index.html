@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Talk Racing</title>
+</head>
+<body>
+
+  <div id="loginSection">
+    <h2>Login</h2>
+    <input type="email" id="emailInput" placeholder="Email" required>
+    <input type="password" id="passwordInput" placeholder="Password" required>
+    <button onclick="loginUser()">Login</button>
+    <p id="loginError" style="color: red;"></p> <!-- Placeholder for error messages -->
+</div>
+
+<div id="talksSection" style="display: none;">
+    <h2>Talk rating Page</h2>
+    <ul id="talksList">
+        <!-- Talks will be populated here -->
+    </ul>
+    <button onclick="showCreateTalkForm()">Create New Talk</button>
+
+    <div id="newTalkForm" style="display: none;">
+        <input type="text" id="talkTitle" placeholder="Talk Title">
+        <textarea id="talkDescription" placeholder="Description"></textarea>
+        <button onclick="createTalk()">Create Talk</button>
+    </div>
+
+    <div id="discussionSection" style="display: none;">
+        <h3 id="selectedTalkTitle"></h3>
+        <div id="messages">
+            <!-- Messages will be populated here -->
+        </div>
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+  
